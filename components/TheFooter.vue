@@ -1,17 +1,29 @@
 <template>
   <footer
-    class="sm:hidden z-20 px-8 fixed bottom-0 w-full bg-gray-950/50 backdrop-blur h-16 border-t-2 border-white/5 flex justify-between items-center"
+    class="fixed -bottom-px z-20 flex h-16 w-full items-center justify-between border-t-2 border-text/5 bg-background/50 px-8 backdrop-blur sm:hidden"
   >
-    <NuxtLink to="/" class="text-center">
+    <NuxtLink
+      to="/"
+      class="grid place-items-center opacity-40 transition-opacity hover:opacity-100"
+    >
       <span class="material-symbols-rounded"> home </span>
     </NuxtLink>
-    <NuxtLink to="/" class="text-center opacity-40">
+    <NuxtLink
+      to="/search"
+      class="grid place-items-center opacity-40 transition-opacity hover:opacity-100"
+    >
       <span class="material-symbols-rounded"> search </span>
     </NuxtLink>
-    <NuxtLink to="/" class="text-center opacity-40">
+    <NuxtLink
+      to="/notifications"
+      class="grid place-items-center opacity-40 transition-opacity hover:opacity-100"
+    >
       <span class="material-symbols-rounded"> notifications </span>
     </NuxtLink>
-    <NuxtLink to="/" class="text-center opacity-40">
+    <NuxtLink
+      to="/messages"
+      class="grid place-items-center opacity-40 transition-opacity hover:opacity-100"
+    >
       <span class="material-symbols-rounded"> mail </span>
     </NuxtLink>
   </footer>

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 243 244 246;
+  --text: 3 7 17;
+}
+
+.dark-mode:root {
+  --background: 3 7 17;
+  --text: 243 244 246;
+}

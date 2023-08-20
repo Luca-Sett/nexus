@@ -1,23 +1,41 @@
 <template>
   <aside
-    class="hidden fixed left-0 w-20 top-0 bottom-0 sm:flex flex-col justify-between py-8 border-r-2 border-white/5"
+    class="fixed bottom-0 top-0 z-30 hidden w-20 flex-col justify-between border-r-2 border-text/5 bg-background py-8 sm:flex"
   >
     <div class="flex flex-col gap-8">
-      <NuxtLink to="/" class="text-center">
+      <NuxtLink
+        to="/"
+        class="grid place-items-center opacity-40 transition-opacity hover:opacity-100"
+      >
         <span class="material-symbols-rounded"> home </span>
       </NuxtLink>
-      <NuxtLink to="/" class="text-center opacity-40">
+
+      <NuxtLink
+        to="/search"
+        class="grid place-items-center opacity-40 transition-opacity hover:opacity-100"
+      >
         <span class="material-symbols-rounded"> search </span>
       </NuxtLink>
-      <NuxtLink to="/" class="text-center opacity-40">
+
+      <NuxtLink
+        to="/notifications"
+        class="grid place-items-center opacity-40 transition-opacity hover:opacity-100"
+      >
         <span class="material-symbols-rounded"> notifications </span>
       </NuxtLink>
-      <NuxtLink to="/" class="text-center opacity-40">
+
+      <NuxtLink
+        to="/messages"
+        class="grid place-items-center opacity-40 transition-opacity hover:opacity-100"
+      >
         <span class="material-symbols-rounded"> mail </span>
       </NuxtLink>
     </div>
 
-    <NuxtLink to="/" class="text-center opacity-50">
+    <NuxtLink
+      to="/profile"
+      class="text-center opacity-40 transition-opacity hover:opacity-100"
+    >
       <span class="material-symbols-rounded"> person </span>
     </NuxtLink>
   </aside>

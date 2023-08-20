@@ -1,13 +1,21 @@
 <template>
-  <header
-    class="sm:ml-20 z-20 fixed right-0 left-0 h-16 sm:h-20 bg-gray-950/50 backdrop-blur flex items-center justify-between px-8 border-b-2 border-white/5"
-  >
-    <h1 class="font-serif text-2xl flex items-center gap-4">
-      <span class="material-symbols-rounded"> lightbulb </span>
+  <header class="fixed -top-px z-20 mx-auto w-full max-w-3xl">
+    <div
+      class="flex h-16 items-center justify-between border-b-2 border-text/5 bg-background/50 px-8 backdrop-blur sm:ml-20 sm:h-20"
+    >
+      <NuxtLink to="/" class="flex items-center gap-3 font-serif text-2xl">
+        <span class="material-symbols-rounded relative top-0.5">
+          wifi_tethering
+        </span>
         nexus.
-    </h1>
-    <button class="grid place-items-center sm:hidden">
-      <span class="material-symbols-rounded"> menu </span>
-    </button>
+      </NuxtLink>
+
+      <NuxtLink
+        to="/profile"
+        class="grid place-items-center opacity-40 transition-opacity hover:opacity-100 sm:hidden"
+      >
+        <span class="material-symbols-rounded"> person </span>
+      </NuxtLink>
+    </div>
   </header>
 </template>

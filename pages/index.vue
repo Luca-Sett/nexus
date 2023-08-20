@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-col gap-6">
     <Post v-for="i in 10" :key="i" :i="i" />
   </div>
 </template>

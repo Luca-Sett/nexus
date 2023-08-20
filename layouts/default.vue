@@ -1,11 +1,17 @@
 <template>
-  <TheHeader />
+  <div class="mx-auto max-w-3xl">
+    <TheHeader />
 
-  <main class="py-16 sm:py-20 sm:pl-20">
-    <slot />
-  </main>
+    <TheLeftSidebar />
 
-  <TheLeftSidebar />
+    <main
+      class="-mr-0.5 min-h-screen border-r-2 border-text/5 py-16 sm:py-20 sm:pl-20"
+    >
+      <div class="p6 sm:p-8">
+        <slot />
+      </div>
+    </main>
 
-  <TheFooter />
+    <TheFooter />
+  </div>
 </template>

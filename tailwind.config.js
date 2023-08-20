@@ -9,6 +9,13 @@ module.exports = {
     screens: {
       sm: "460px",
     },
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      background: "rgb(var(--background) / <alpha-value>)",
+      text: "rgb(var(--text) / <alpha-value>)",
+      accent: "#43a4ff",
+    },
     extend: {},
   },
   plugins: [],
