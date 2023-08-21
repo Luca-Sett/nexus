@@ -14,6 +14,7 @@ module.exports = {
       current: "currentColor",
       background: "rgb(var(--background) / <alpha-value>)",
       text: "rgb(var(--text) / <alpha-value>)",
+      muted: "rgb(var(--muted) / <alpha-value>)",
       accent: "#43a4ff",
     },
     extend: {},

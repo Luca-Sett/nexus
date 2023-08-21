@@ -1,9 +1,8 @@
 <template>
-  <NuxtLink
-    to="/post/1"
-    class="rounded-2xl bg-text/5 outline-none hover:bg-text/10 focus-visible:bg-text/10"
+  <div
+    class="bg-text/5 outline-none transition-colors hover:bg-text/[0.08] focus-visible:bg-text/10 rounded-xl sm:rounded-2xl"
   >
-    <div class="flex gap-4 p-4">
+    <div class="flex gap-3 p-5 pr-8 sm:p-6">
       <div class="h-10 w-10 shrink-0 overflow-hidden rounded-full bg-text/10">
         <img
           :src="`https://picsum.photos/40?random=${i}`"
@@ -12,7 +11,7 @@
       </div>
 
       <div>
-        <h2 class="font-semibold">John Doe</h2>
+        <h2 class="font-semibold leading-none">John Doe</h2>
 
         <h3 class="mb-4 text-sm opacity-50">@johnathan_doe23 • 16/08</h3>
 
@@ -32,7 +31,7 @@
         class="group flex w-full items-center justify-center gap-2 rounded-lg py-2 outline-none transition-colors hover:bg-text/5 focus-visible:bg-text/5"
       >
         <span
-          class="material-symbols-rounded group-hover:text-accent group-focus-visible:text-accent !text-xl transition-colors"
+          class="material-symbols-rounded !text-xl transition-colors group-hover:text-accent group-focus-visible:text-accent"
         >
           favorite
         </span>
@@ -44,7 +43,7 @@
         class="group flex w-full items-center justify-center gap-2 rounded-lg py-2 outline-none transition-colors hover:bg-text/5 focus-visible:bg-text/5"
       >
         <span
-          class="material-symbols-rounded group-hover:text-accent group-focus-visible:text-accent !text-xl transition-colors"
+          class="material-symbols-rounded !text-xl transition-colors group-hover:text-accent group-focus-visible:text-accent"
         >
           reply
         </span>
@@ -56,7 +55,7 @@
         class="group flex w-full items-center justify-center gap-2 rounded-lg py-2 outline-none transition-colors hover:bg-text/5 focus-visible:bg-text/5"
       >
         <span
-          class="material-symbols-rounded group-hover:text-accent group-focus-visible:text-accent !text-xl transition-colors"
+          class="material-symbols-rounded !text-xl transition-colors group-hover:text-accent group-focus-visible:text-accent"
         >
           laps
         </span>
@@ -68,13 +67,13 @@
         class="group flex w-full items-center justify-center gap-2 rounded-lg py-2 outline-none transition-colors hover:bg-text/5 focus-visible:bg-text/5"
       >
         <span
-          class="material-symbols-rounded group-hover:text-accent group-focus-visible:text-accent !text-xl transition-colors"
+          class="material-symbols-rounded !text-xl transition-colors group-hover:text-accent group-focus-visible:text-accent"
         >
           share
         </span>
       </button>
     </div>
-  </NuxtLink>
+  </div>
 </template>
 
 <script setup lang="ts">

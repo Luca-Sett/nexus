@@ -40,3 +40,9 @@
     </NuxtLink>
   </aside>
 </template>
+
+<style scoped>
+.router-link-active {
+  opacity: 100;
+}
+</style>
